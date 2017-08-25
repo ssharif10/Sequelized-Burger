@@ -16,6 +16,9 @@ app.use(express.static("public"));
 //will parse data
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// Requiring our models for syncing
+var db = require("./models");
+
 
 app.use(methodOverride("_method"));
 
